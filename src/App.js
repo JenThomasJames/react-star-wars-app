@@ -30,7 +30,7 @@ function App() {
           </Card>
         </Fragment>
       )}
-      {Object.keys(data).length != 0 && <Movies movieData={data.results} />}
+      {Object.keys(data).length !== 0 && <Movies movieData={data.results} />}
     </div>
   );
 }

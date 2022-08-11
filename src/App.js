@@ -1,10 +1,13 @@
 import './App.css';
 import Button from './shared/Button';
+import Card from './shared/Card';
 
 function App() {
   return (
     <div className='root-style'>
-      <Button btnText="Fetch Movies"></Button>
+      <Card>
+        <Button btnText="Fetch Movies"></Button>
+      </Card>
     </div>
   );
 }

@@ -25,7 +25,7 @@ function App() {
       <Card>
         <Button btnText="Fetch Movies" clickHandler={fetchMoviesHandler}></Button>
       </Card>
-      {Object.keys(data).length != 0  && <Movies movieData={data} />}
+      {Object.keys(data).length != 0  && <Movies movieData={data.results} />}
     </div>
   );
 }

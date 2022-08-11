@@ -1,0 +1,54 @@
+.frosty-card {
+  width: 30%;
+  min-height: 70vh;
+  display: flex;
+  align-items: flex-end;
+  margin: 30px;
+  border-radius: 20px;
+  border: transparent;
+  transition: border 0.5s;
+  cursor: pointer;
+  background: url("https://p4.wallpaperbetter.com/wallpaper/153/860/948/movie-poster-star-wars-star-wars-the-rise-of-skywalker-2019-year-movies-hd-wallpaper-preview.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.frosty-card:hover {
+  box-shadow: #f14668 0px 3px 12px;
+}
+
+.card-data {
+  padding: 5px 40px;
+  width: 100%;
+  height: 30%;
+  background-color: #181818f0;
+  border-radius: 20px;
+  overflow: scroll;
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rating-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  background: #f14668;
+  border-radius: 25px;
+  color: #fff;
+}
+h1 {
+  color: #fff;
+}
+p {
+  color: rgb(196, 196, 196);
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-justify: inter-word;
+}

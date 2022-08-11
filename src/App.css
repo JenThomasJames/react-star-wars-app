@@ -1,20 +1,10 @@
 .root-style {
-    min-height: 100vh;
-    background-color: #313552;
+  min-height: 100vh;
+  background-color: #313552;
 }
-
-.text-primary {
-    color: #313552;
-}
-
-.text-accent {
-    color: #F14668;
-}
-
-.bg-primary {
-    background-color: #313552;
-}
-
-.bg-accent {
-    background-color: #F14668;
+.center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
 }

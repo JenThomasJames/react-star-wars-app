@@ -1,0 +1,13 @@
+.btn-brand{
+    padding: 15px 40px;
+    background-color: transparent;
+    border: 2px solid #F14668;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.5s;
+}
+.btn-brand:hover{
+    background-color: #ef2850;
+}

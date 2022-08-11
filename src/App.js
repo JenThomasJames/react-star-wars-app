@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
+import Button from './shared/Button';
 
 function App() {
   return (
-    <div>
-      
+    <div className='root-style'>
+      <Button btnText="Fetch Movies"></Button>
     </div>
   );
 }

@@ -33,7 +33,7 @@ const Movie = (props) => {
         </div>
       </div>
       {showModal && (
-        <Modal onHideModal={hideModalHandler}>
+        <Modal title={'Watching'} onHideModal={hideModalHandler}>
           <h2>You are now watching Star Wars: {props.movie.title}</h2>
         </Modal>
       )}

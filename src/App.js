@@ -3,11 +3,17 @@ import "./App.css";
 import Movies from "./components/movies/Movies";
 import Button from "./shared/Button";
 import Card from "./shared/Card";
+import Modal from "./shared/Modal";
 import Spinner from "./shared/Spinner";
 
 function App() {
   const [data, setData] = useState({});
   const [showSpinner, setShowSpinner] = useState(false);
+  const [hasError, setHasError] = useState(false);
+  const hideModalHandler = () => {
+    setHasError(false);
+  };
+
   const fetchMoviesHandler = async () => {
     setShowSpinner(true);
     try {
@@ -17,8 +23,8 @@ function App() {
         throw new Error("Something went wrong :(");
       }
       setData(await response.json());
-    } catch (error) {
-      console.log(error.message);
+    } catch (err) {
+      setHasError(true);
     }
     setShowSpinner(false);
   };
@@ -40,6 +46,11 @@ function App() {
         <div className="center-all">
           <Spinner />
         </div>
+      )}
+      {hasError && (
+        <Modal title={"Error!"} onHideModal={hideModalHandler}>
+          <h2>Internal Server Error</h2>
+        </Modal>
       )}
     </div>
   );
